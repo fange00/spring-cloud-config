@@ -13,8 +13,12 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9000/eureka/  #告诉服务提供者要把服务注册到哪儿 #单机环境
+    fetch-registry: true
+    register-with-eureka: true
   instance:
     prefer-ip-address: true #显示客户端真实ip
+
+
 ---
 server:
   port: 9012
@@ -26,6 +30,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9000/eureka/ #告诉服务提供者要把服务注册到哪儿 #单机环境
+    fetch-registry: true
+    register-with-eureka: true  
   instance:
     prefer-ip-address: true #显示客户端真实ip
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
