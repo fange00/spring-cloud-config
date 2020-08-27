@@ -17,6 +17,7 @@ eureka:
     register-with-eureka: true
   instance:
     prefer-ip-address: true #显示客户端真实ip
+foo: foo version 21
 
 
 ---
