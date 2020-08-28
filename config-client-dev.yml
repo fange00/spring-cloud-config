@@ -18,7 +18,7 @@ eureka:
   instance:
     prefer-ip-address: true #显示客户端真实ip
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-foo: foo version 21
+lwf: gsyxka!
 
 
 ---
